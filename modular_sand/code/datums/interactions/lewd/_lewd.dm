@@ -824,19 +824,21 @@
 	else //todo: better self cum messages
 		message = "cums all over themselves!"
 	if(gender == MALE)
-		playlewdinteractionsound(loc, pick('modular_sand/sound/interactions/final_m1.ogg',
-							'modular_sand/sound/interactions/final_m2.ogg',
-							'modular_sand/sound/interactions/final_m3.ogg',
-							'modular_sand/sound/interactions/final_m4.ogg',
-							'modular_sand/sound/interactions/final_m5.ogg'), 90, 1, 0)
+		playlewdinteractionsound(loc, pick('modular_sand/sound/interactions/moan_m1.ogg',
+							'modular_sand/sound/interactions/moan_m2.ogg',
+							'modular_sand/sound/interactions/moan_m3.ogg',
+							'modular_sand/sound/interactions/moan_m4.ogg',
+							'modular_sand/sound/interactions/moan_m5.ogg'), 90, 1, 0)
 	else if(gender == FEMALE)
-		playlewdinteractionsound(loc, pick('modular_sand/sound/interactions/final_f1.ogg',
-							'modular_sand/sound/interactions/final_f2.ogg',
-							'modular_sand/sound/interactions/final_f3.ogg'), 70, 1, 0)
+		playlewdinteractionsound(loc, pick('modular_sand/sound/interactions/moan_f1.ogg',
+							'modular_sand/sound/interactions/moan_f2.ogg',
+							'modular_sand/sound/interactions/moan_f3.ogg',
+							'modular_sand/sound/interactions/moan_f4.ogg',
+							'modular_sand/sound/interactions/moan_f5.ogg'), 70, 1, 0)
 	else
-		playlewdinteractionsound(loc, pick('modular_sand/sound/interactions/final_f1.ogg',
-							'modular_sand/sound/interactions/final_f2.ogg',
-							'modular_sand/sound/interactions/final_f3.ogg'), 70, 1, 0)
+		playlewdinteractionsound(loc, pick('modular_sand/sound/interactions/moan_m1.ogg',
+							'modular_sand/sound/interactions/moan_m2.ogg',
+							'modular_sand/sound/interactions/moan_m3.ogg'), 70, 1, 0)
 	visible_message(message = "<span class='userlove'><b>\The [src]</b> [message]</span>", ignored_mobs = get_unconsenting())
 	multiorgasms += 1
 
